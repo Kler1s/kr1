@@ -19,7 +19,7 @@
       text-align: center;
     }
 
-    @media screen and(max-width: 500px) {
+    @media screen and(max-width: 425px) {
       body {
         flex-direction: column;
       }
@@ -59,16 +59,24 @@
 
     body {
       height: 2500px;
+      background-color: mintcream;
     }
 
     .knopka {
       background-color: cornflowerblue;
       color: azure;
+      height: 30px;
+      border-radius: 5px;
     }
 
     .knopka:hover {
       background-color: darkblue;
       color: rgb(150, 151, 151);
+    }
+
+    .knopka:active {
+      background-color: black;
+      color: lawngreen;
     }
 
     .tabletka {
@@ -94,6 +102,10 @@
     .secondt {
       background-color: lightcyan;
       color: rgb(0, 0, 0);
+    }
+
+    .cvet {
+      border-radius: 5px;
     }
   </style>
 </head>
@@ -185,16 +197,16 @@
     <h4>Через сайт:</h4>
     <form>
       <label>Введите ФИО:
-        <input type="text" placeholder="Фамилия Имя Отчество"></label>
+        <input type="text" placeholder="Фамилия Имя Отчество" class="cvet"></label>
       <br>
       <label>Введите почту:
-        <input type="email" placeholder="example@gmail.com"></label>
+        <input type="email" placeholder="example@gmail.com" class="cvet"></label>
       <br>
       <label>Ваше сообщение:
-        <textarea name="" id="" cols="30" rows="10" placeholder="Описание"></textarea></label>
+        <textarea name="" id="" cols="30" rows="10" placeholder="Описание" class="cvet"></textarea></label>
       <br>
       <label>Дата рождения:
-        <input type="date"></label>
+        <input type="date" class="cvet"></label>
       <br>
       <label>Интересная задумка -
         <input type="checkbox"></label>
