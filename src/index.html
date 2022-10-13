@@ -8,20 +8,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="./favicon.ico">
   <style>
-    div.maininfa > div {
+    div.maininfa>div {
       width: 10%;
       margin: 0;
       margin-left: auto;
       margin-right: auto;
     }
+
     #v1 {
-        text-align: center;
+      text-align: center;
     }
+
     @media screen and(max-width: 500px) {
-      body{
+      body {
         flex-direction: column;
       }
     }
+
     header {
       background-color: black;
       color: lawngreen;
@@ -32,58 +35,62 @@
       margin-left: -100px;
       margin-right: -100px;
     }
-    .navi{
+
+    .navi {
       list-style: none;
       margin: 0;
       padding: 20px;
     }
-    .rt{
+
+    .rt {
       font-size: 40px;
       padding: 20px;
       color: lawngreen;
       text-decoration: none;
     }
-    .rt:hover{
+
+    .rt:hover {
       color: darkgreen;
     }
-    .op{
+
+    .op {
       display: inline;
     }
-    body{
+
+    body {
       height: 2500px;
     }
-    .knopka{
+
+    .knopka {
       background-color: cornflowerblue;
       color: azure;
     }
-    .knopka:hover{
+
+    .knopka:hover {
       background-color: darkblue;
       color: rgb(150, 151, 151);
     }
-    .knopka:disabled{
-      background-color: cornflowerblue;
-      color: azure;
-    }
-    .knopka:enabled{
-      background-color: black;
-      color: lime;
-    }
+
     .tabletka {
       margin-top: 100px;
       margin-bottom: 100px;
     }
+
     .nav {
       top: 0;
       position: sticky;
     }
+
     th {
       background-color: grey;
       color: white;
     }
+
     .firstt {
       background-color: palegreen;
       color: rgb(0, 0, 0);
     }
+
     .secondt {
       background-color: lightcyan;
       color: rgb(0, 0, 0);
@@ -93,41 +100,48 @@
 
 <body>
   <h1 id="v1">Проект Трошина М.В. и Безматерных И.М.</h1>
-  <!-- main инфа -->
+  <!-- навигация -->
   <header class="nav">
     <ul class="navi" class="nav">
-      <li class="op"><a class="rt" href="http://localhost:4200/#:~:text=%D0%B8%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D0%B8%D1%8F%20%D0%A2%D0%B0%D0%B1%D0%BB%D0%B8%D1%86%D0%B0%20%D0%A4%D0%BE%D1%80%D0%BC%D0%B0-,%D0%9D%D0%B0%D0%B7%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B0%3A,-%D0%92%D0%B8%D0%B4%D1%8B%20%D1%81%D0%B5%D0%BA%D1%86%D0%B8%D0%B9%20%D0%B8">Основная информация</a></li>
-      <li class="op"><a class="rt" href="http://localhost:4200/#:~:text=%D1%82%D1%80%D0%B5%D0%BD%D0%B5%D1%80%D0%B0%20%D0%B8%D0%B7%20%D1%81%D0%BF%D0%BE%D1%80%D1%82%D0%B7%D0%B0%D0%BB%D0%B0-,%D0%9F%D0%B5%D1%80%D0%B2%D0%B0%D1%8F%20%D0%BD%D0%B5%D0%B4%D0%B5%D0%BB%D1%8F,-%D0%92%D1%82%D0%BE%D1%80%D0%B0%D1%8F%20%D0%BD%D0%B5%D0%B4%D0%B5%D0%BB%D1%8F">Таблица</a></li>
-      <li class="op"><a class="rt" href="http://localhost:4200/#:~:text=%D0%A1%D0%BF%D0%BE%D1%81%D0%BE%D0%B1%D1%8B%20%D0%BE%D0%B1%D1%80%D0%B0%D1%82%D0%BD%D0%BE%D0%B9%20%D1%81%D0%B2%D1%8F%D0%B7%D0%B8%20%D1%81%D0%BE%20%D0%BC%D0%BD%D0%BE%D0%B9">Форма</a></li>
+      <li class="op"><a class="rt"
+          href="http://localhost:4200/#:~:text=%D0%B8%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D0%B8%D1%8F%20%D0%A2%D0%B0%D0%B1%D0%BB%D0%B8%D1%86%D0%B0%20%D0%A4%D0%BE%D1%80%D0%BC%D0%B0-,%D0%9D%D0%B0%D0%B7%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B0%3A,-%D0%92%D0%B8%D0%B4%D1%8B%20%D1%81%D0%B5%D0%BA%D1%86%D0%B8%D0%B9%20%D0%B8">Основная
+          информация</a></li>
+      <li class="op"><a class="rt"
+          href="http://localhost:4200/#:~:text=%D1%82%D1%80%D0%B5%D0%BD%D0%B5%D1%80%D0%B0%20%D0%B8%D0%B7%20%D1%81%D0%BF%D0%BE%D1%80%D1%82%D0%B7%D0%B0%D0%BB%D0%B0-,%D0%9F%D0%B5%D1%80%D0%B2%D0%B0%D1%8F%20%D0%BD%D0%B5%D0%B4%D0%B5%D0%BB%D1%8F,-%D0%92%D1%82%D0%BE%D1%80%D0%B0%D1%8F%20%D0%BD%D0%B5%D0%B4%D0%B5%D0%BB%D1%8F">Таблица</a>
+      </li>
+      <li class="op"><a class="rt"
+          href="http://localhost:4200/#:~:text=%D0%A1%D0%BF%D0%BE%D1%81%D0%BE%D0%B1%D1%8B%20%D0%BE%D0%B1%D1%80%D0%B0%D1%82%D0%BD%D0%BE%D0%B9%20%D1%81%D0%B2%D1%8F%D0%B7%D0%B8%20%D1%81%D0%BE%20%D0%BC%D0%BD%D0%BE%D0%B9">Форма</a>
+      </li>
     </ul>
   </header>
+  <!-- main инфа -->
   <div class="maininfa">
     <div>
-    <p>
-    <h4>Название проекта:</h4>
-    </p>
-    <p>Виды секций и их плюсы с недостатками</p>
-    <p>
-    <h4>Что нужно было сделать:</h4>
-    </p>
-    <ol class="padmain">
-      <li>Изучить HTML</li>
-      <li>Изучить CSS</li>
-      <li>Изучить TS</li>
-      <li>Узнать подробную информацию по этой теме</li>
-      <li>Написать код</li>
-    </ol>
-    <p>
-    <h4>Что было сделано:</h4>
-    </p>
-    <p>
-    <ol class="padmain2">
-      <li>Изучены основы HTML</li>
-      <li>Изучены основы CSS</li>
-      <li>Расспрошена стартовая информация у тренера из спортзала</li>
-    </ol>
-    </p>
-  </div>
+      <p>
+      <h4>Название проекта:</h4>
+      </p>
+      <p>Виды секций и их плюсы с недостатками</p>
+      <p>
+      <h4>Что нужно было сделать:</h4>
+      </p>
+      <ol class="padmain">
+        <li>Изучить HTML</li>
+        <li>Изучить CSS</li>
+        <li>Изучить TS</li>
+        <li>Узнать подробную информацию по этой теме</li>
+        <li>Написать код</li>
+      </ol>
+      <p>
+      <h4>Что было сделано:</h4>
+      </p>
+      <p>
+      <ol class="padmain2">
+        <li>Изучены основы HTML</li>
+        <li>Изучены основы CSS</li>
+        <li>Расспрошена стартовая информация у тренера из спортзала</li>
+      </ol>
+      </p>
+    </div>
   </div>
   <hr>
   <!-- Таблица -->
@@ -155,48 +169,48 @@
       </tbody>
     </table>
   </div>
-<hr>
+  <hr>
 
   <!-- Форма -->
   <h1>Способы обратной связи со мной</h1>
   <div>
-  <h4>Личные контакты:</h4>
-  <p>
-  <ul>
-    <li><a href="https://github.com/Kler1s" target="_blank">GitHub</a></li>
-    <li><a href="https://vk.com/id418244228" target="_blank">VKontakte</a></li>
-    <li><a href="https://steamcommunity.com/profiles/76561199075621307/" target="_blank">Steam</a></li>
-  </ul>
-  </p>
-  <h4>Через сайт:</h4>
-  <form>
-    <label>Введите ФИО:
-      <input type="text" placeholder="Фамилия Имя Отчество"></label>
-    <br>
-    <label>Введите почту:
-      <input type="email" placeholder="example@gmail.com"></label>
-    <br>
-    <label>Ваше сообщение:
-      <textarea name="" id="" cols="30" rows="10" placeholder="Описание"></textarea></label>
-    <br>
-    <label>Дата рождения:
-      <input type="date"></label>
-    <br>
-    <label>Интересная задумка -
-      <input type="checkbox"></label>
+    <h4>Личные контакты:</h4>
+    <p>
+    <ul>
+      <li><a href="https://www.facebook.com/profile.php?id=100040371833070" target="_blank">Facebook</a></li>
+      <li><a href="https://vk.com/id418244228" target="_blank">VKontakte</a></li>
+      <li><a href="https://steamcommunity.com/profiles/76561199075621307/" target="_blank">Steam</a></li>
+    </ul>
+    </p>
+    <h4>Через сайт:</h4>
+    <form>
+      <label>Введите ФИО:
+        <input type="text" placeholder="Фамилия Имя Отчество"></label>
       <br>
-    <label>Лучше подумать над другой темой проекта -
-      <input type="checkbox"></label>
+      <label>Введите почту:
+        <input type="email" placeholder="example@gmail.com"></label>
       <br>
-    <label>Dota -
-      <input type="checkbox"></label>
+      <label>Ваше сообщение:
+        <textarea name="" id="" cols="30" rows="10" placeholder="Описание"></textarea></label>
       <br>
-    <label>CS:GO -
-      <input type="checkbox"></label>
-    <br>
-    <input class="knopka" type="submit" value="Отправить">
-  </form>
-</div>
+      <label>Дата рождения:
+        <input type="date"></label>
+      <br>
+      <label>Интересная задумка -
+        <input type="checkbox"></label>
+      <br>
+      <label>Лучше подумать над другой темой проекта -
+        <input type="checkbox"></label>
+      <br>
+      <label>Dota -
+        <input type="checkbox"></label>
+      <br>
+      <label>CS:GO -
+        <input type="checkbox"></label>
+      <br>
+      <input class="knopka" type="submit" value="Отправить">
+    </form>
+  </div>
 </body>
 
 </html>
